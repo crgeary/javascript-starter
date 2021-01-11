@@ -4,14 +4,28 @@
     "description": "",
     "main": "src/index.js",
     "scripts": {
-        "format": "prettier --write .",
+        "format": "prettier --ignore-path .gitignore --write .",
+        "check-format": "prettier --list-different --ignore-path .gitignore .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
         "@crgeary/configuration-prettier": "^1.0.3",
+        "husky": "^4.3.7",
+        "lint-staged": "^10.5.3",
         "prettier": "^2.2.1"
     },
     "author": "Christopher Geary <hello@crgeary.com>",
     "license": "MIT",
-    "prettier": "@crgeary/configuration-prettier"
+    "prettier": "@crgeary/configuration-prettier",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*.+(js|jsx|ts|tsx|json)": [
+            "prettier --write",
+            "git add"
+        ]
+    }
 }
