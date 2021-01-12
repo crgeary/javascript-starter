@@ -1,6 +1,6 @@
-# Node Starter
+# JavaScript Starter
 
-A starter template for my node repositories.
+A basic starter template for JavaScript repositories.
 
 ## License
 
