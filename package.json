@@ -11,13 +11,13 @@
         "test:watch": "jest --watch"
     },
     "devDependencies": {
-        "@crgeary/configuration-prettier": "^1.0.3",
-        "eslint": "^7.17.0",
-        "eslint-config-prettier": "^7.1.0",
-        "husky": "^4.3.7",
-        "jest": "^26.6.3",
-        "lint-staged": "^10.5.3",
-        "prettier": "^2.2.1"
+        "@crgeary/configuration-prettier": "1.0.3",
+        "eslint": "7.17.0",
+        "eslint-config-prettier": "7.1.0",
+        "husky": "4.3.7",
+        "jest": "26.6.3",
+        "lint-staged": "10.5.3",
+        "prettier": "2.2.1"
     },
     "author": "Christopher Geary <hello@crgeary.com>",
     "license": "MIT",
